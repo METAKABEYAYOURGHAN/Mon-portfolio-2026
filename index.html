@@ -1,92 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="fr"> <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon portfolio</title>
-    <link rel="stylesheet" href="CSS/style.CSS">
+    <title>Mon portfolio | Yourghan</title>
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <header>
-        <div><a href="">Mon Portfolio</a></div>
-        <div>
-            <nav>
-                <ul>
-                    <li><a href="index.html"class=active>Accueil</a></li>
-                    <li><a href="projet.html">projet</a></li>
-                    <li><a href="passion.html">Passions</a></li>
-                    <li><a href="divertissement.html">Divertissement</a></li>
-                    <li><a href="contact.html">Contacts</a></li>
-                </ul>
-            </nav>
-        </div>
+        <div><a href="index.html">Mon Portfolio</a></div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="projet.html">Projets</a></li>
+                <li><a href="passion.html">Passions</a></li>
+                <li><a href="divertissement.html">Divertissement</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+            </ul>
+        </nav>
     </header>
-</body>
-<main>
-    <section>
-        <div>
-            <h1>Bonjour, je suis Yourghan</h1>
-            <p>Etudiante en L2 et passionné par le web</p>
-            <a href="">Voir mes projets</a>
-        </div>
-        <div>
-            <img src="Images/IMG-20260119-WA0059.jpg" alt="yourghan artistes" width="240">
-        </div>
-    </section>
-    <Section>
-            <h2>A propos de moi</h2>
-            <p>bonjour! je m'appelle yourghan kabeya et je suis une etudiante dynamique et motivé en informatique à l'UDBL passionné par le développement web, l'intelligence artificielle, et le design graphique; je suis constamment à la recherche de nouvelle opportunités d'appratissage et de défits stimulants.</p>
-            <p>Au cours de mes études,j'ai développé de solides compétences en programmation. je suis une personne, rigoureuse, créative et j'aime travailler en équipe pour atteindre des objectifs communs. Mon objectif est de contribuer à des projets innovant, trouver un stage, et maitriser le framework laravel.</p>
-    </Section>
-    <Section>
+
+    <main>
+        <section class="hero">
+            <div>
+                <h1>Bonjour, je suis Yourghan</h1>
+                <p>Étudiante en L2 et passionnée par le web</p>
+                <a href="projet.html">Voir mes projets</a>
+            </div>
+            <div>
+                <img src="Images/IMG-20260119-WA0059.jpg" alt="Yourghan portrait" width="240">
+            </div>
+        </section>
+
+        <section class="apropos">
+            <div>
+                <h2>À propos de moi</h2>
+                <p>Bonjour ! Je m'appelle Yourghan Kabeya et je suis une étudiante dynamique et motivée en informatique à l'UDBL.Passionnée par le developpement web. L'intelligence artificielle, et le design graphique, je suis constament à la recherchede nouvelles opportunités d'apprentissage et de défis stimulants.</p>
+                <p>Au cours de mes études, j'ai développé de solides compétences en programmation. Je suis une personne rigoureuse, créative et j'aime trailler en équipe pour atteindre des objectifs communs. Mon objectif est de contribuer à des projets innovants, trouver un stage, et maîtriser le framework Laravel.</p>
+            </div>
+        </section>
+
+        <section class="competences">
             <h3>Mes compétences</h3>
             <table>
                 <thead>
                     <tr>
-                        <th>CATEGORIE</th>
-                        <th>COMPETENCES</th>
+                        <th>CATÉGORIE</th>
+                        <th>COMPÉTENCES</th>
                         <th>NIVEAU</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>Programmation</td>
-                        <td>HTML,CSS,JavaScript,Python</td>
+                        <td>HTML, CSS, JavaScript, Python</td>
                         <td>Avancé</td>
                     </tr>
                     <tr>
                         <td>Design</td>
-                        <td>Figma,PhotoShop (bases)</td>
+                        <td>Figma, Photoshop (bases)</td>
                         <td>Intermédiaire</td>
                     </tr>
                     <tr>
                         <td>Langues</td>
-                        <td>Français(natif),Anglais(Fluide)</td>
+                        <td>Français (natif), Anglais (fluide)</td>
                         <td>Avancé</td>
-                    </tr>
-                    <tr>
-                        <td>Outils</td>
-                        <td>Git,Vs Code,Sulte Office</td>
-                        <td>Avancé</td>
-                    </tr>
-                    <tr>
-                        <td>Soft Skills</td>
-                        <td>Communication,Résolution de problèmes,Autonomie</td>
-                        <td>Expert</td>
                     </tr>
                 </tbody>
             </table>
         </section>
     </main>
+
     <footer>
-        <p>2026 Yourghan. Tous droits réservés.</p>
-        <img src="icon/github.svg" alt="ygn"width="30">
-        <img src="icon/linkedin.svg" alt="ygn"width="30">
-        <img src="icon/x.svg" alt="ygn"width="30">
+        <p>&copy; 2026 Yourghan. Tous droits réservés.</p>
+        <div class="social-links">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
     </footer>
+
 </body>
 </html>
-    

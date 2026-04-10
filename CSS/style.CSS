@@ -1,60 +1,65 @@
-:root{
-    --violet-doux: #6C63FF;
-    --violet-fonce: #534EDD;
-    --orange-vif: rgba(255, 154, 38, 0.94);
+:root {
+    --violet-doux: #6c63ff;
+    --violet-foncé: #534edd;
+    --orange-vif: #ffa726;
     --gris-tres-fonce: #333;
     --gris-fonce: #666;
-    --gris-tres-clair: #F8F8F8,
-    --gris-clair: #EEE;
+    --gris-tres-clair: #f8f8f8;
+    --gris-clair: #eee;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-h1{
-    color: var(--gris-tres-clair);
-    font-family: roboto, sans-serif;
+body {
+    background-color: var(--gris-tres-clair);
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
+    overflow-x: hidden; /* Empêche le scroll horizontal */
 }
 
-header{
+/* --- HEADER --- */
+header {
     background-color: white;
-    box-shadow: 2px 6px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Correction de l'ombre */
     position: sticky;
     top: 0;
     z-index: 100;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 3rem;
+    padding: 1.5rem 3rem; /* Légèrement réduit pour plus de finesse */
 }
 
 header div a {
     text-decoration: none;
-    font-size: 2.2rem;
+    font-size: 1.8rem; /* Un peu plus petit pour l'équilibre */
     font-weight: bold;
-    color: var(--violet-doux);   
+    color: var(--violet-doux);
 }
-ul li {
-    list-style : none;
-    margin-left: 15px;
-}
+
 ul {
     display: flex;
-
+    list-style: none;
 }
+
+ul li {
+    margin-left: 25px;
+}
+
 ul li a {
     text-decoration: none;
     color: var(--gris-tres-fonce);
     font-weight: 600;
     font-size: 1.1rem;
     position: relative;
-    padding: 10px 0;  
+    padding: 5px 0;
 }
-ul li a:hover {
+
+ul li a:hover, a.active {
     color: var(--violet-doux);
 }
 
@@ -64,22 +69,149 @@ ul li a::after {
     left: 0;
     bottom: 0;
     height: 3px;
-    width: 0px;
+    width: 0%;
     background-color: var(--violet-doux);
     transition: width 0.3s ease;
-
 }
-ul li a:hover::after{
+
+ul li a:hover::after, a.active::after {
     width: 100%;
 }
-a.active {
+
+/* --- HERO SECTION --- */
+section.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin: 8rem 2rem;
+    animation: fadeInUp 1s ease-out; /* Application de l'animation */
+}
+
+section.hero img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px solid var(--violet-foncé);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+section.hero h1 {
+    color: var(--violet-foncé);
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+
+section.hero p {
+    color: var(--gris-fonce);
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+section.hero a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: var(--violet-doux);
+    color: white;
+    padding: 15px 35px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Correction faute frappe */
+}
+
+section.hero a:hover {
+    background-color: var(--violet-foncé);
+    transform: translateY(-3px);
+}
+
+/* --- SECTIONS COMMUNES --- */
+.apropos, .competences {
+    width: 90%;
+    max-width: 900px;
+    margin: 6rem auto;
+    text-align: center;
+}
+
+section h2, section h3 {
     color: var(--violet-doux);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
-a.active::after {
+
+section h2::after, .competences h3::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--violet-doux);
+    margin: 1rem auto;
+    border-radius: 2px;
+}
+
+/* --- TABLEAU --- */
+.competences table {
     width: 100%;
-    
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Correction ombre */
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 2rem;
 }
 
+.competences table th, .competences table td {
+    padding: 18px;
+    text-align: left;
+}
 
+.competences table thead {
+    background-color: var(--violet-doux);
+    color: #FFF;
+}
 
+.competences table tbody tr:nth-child(even) {
+    background-color: #fafafa;
+}
 
+.competences table tbody tr:hover {
+    background-color: #f1f0ff;
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: var(--violet-doux);
+    padding: 4rem 0;
+    text-align: center;
+}
+
+footer p {
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+footer a {
+    font-size: 1.8rem;
+    color: white;
+    margin: 0 15px;
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--orange-vif);
+    transform: scale(1.2);
+}
+
+/* --- ANIMATIONS --- */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}

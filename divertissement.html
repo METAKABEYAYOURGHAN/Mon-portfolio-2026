@@ -1,39 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon portfolio</title>
-    <link rel="stylesheet" href="CSS/style.CSS">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Divertissements | Yourghan Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/divertissement.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
+    
     <header>
-        <div><a href="">Mon Portfolio</a></div>
-        <div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="projet.html">projet</a></li>
-                    <li><a href="passion.html">Passions</a></li>
-                    <li><a href="divertissement.html" class="active">Divertissement</a></li>
-                    <li><a href="contact.html">Contacts</a></li>
-                </ul>
-            </nav>
-        </div>
+        <div class="logo"><a href="index.html">Mon Portfolio</a></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projet.html">Projet</a></li>
+                <li><a href="passion.html">Passions</a></li>
+                <li><a href="divertissement.html" class="active">Divertissement</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-</body>
-<main>
-    <h1>Mes divertissements</h1>
-</main>
+
+    <main class="div-main">
+        <section class="div-hero">
+            <div class="container animated-fadeInDown">
+                <h1>Divertissements</h1>
+                <div class="separator"></div>
+                <p class="subtitle">Un esprit créatif a besoin de s'évader pour mieux innover.</p>
+            </div>
+        </section>
+
+        <section class="div-grid-section container">
+            <div class="div-grid">
+                
+                <article class="div-card animated-fadeInUp delay-1s">
+                    <div class="card-image">
+                        <img src="images/Jeux.png" alt="Jeux Vidéo">
+                        <div class="icon-overlay icon-blue"><i class="fa-solid fa-gamepad"></i></div>
+                    </div>
+                    <div class="card-content">
+                        <span class="tag tag-blue">Gaming</span>
+                        <h3>Jeux Vidéo</h3>
+                        <p>Immersion dans des univers virtuels pour développer la réactivité et la stratégie.</p>
+                    </div>
+                </article>
+
+                <article class="div-card animated-fadeInUp delay-2s">
+                    <div class="card-image">
+                        <img src="images/music.jpeg" alt="Musique">
+                        <div class="icon-overlay icon-gold"><i class="fa-solid fa-music"></i></div>
+                    </div>
+                    <div class="card-content">
+                        <span class="tag tag-gold">Inspiration</span>
+                        <h3>Musique</h3>
+                        <p>Une source d'énergie indispensable pour rythmer mes sessions de création et de code.</p>
+                    </div>
+                </article>
+
+                <article class="div-card animated-fadeInUp delay-3s">
+                    <div class="card-image">
+                        <img src="images/cinema.jpeg" alt="Cinéma">
+                        <div class="icon-overlay icon-red"><i class="fa-solid fa-film"></i></div>
+                    </div>
+                    <div class="card-content">
+                        <span class="tag tag-red">7ème Art</span>
+                        <h3>Cinéma</h3>
+                        <p>Analyse du storytelling et de l'esthétique visuelle à travers les chefs-d'œuvre du cinéma.</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="div-conclusion container animated-fadeInUp delay-4s">
+            <div class="conclusion-box">
+                <p>Ces loisirs nourrissent mon imaginaire et renforcent ma sensibilité visuelle.</p>
+            </div>
+        </section>
+    </main>
+
     <footer>
-        <p>2026 Yourghan. Tous droits réservés.</p>
-        <img src="icon/github.svg" alt="ygn"width="30">
-        <img src="icon/linkedin.svg" alt="ygn"width="30">
-        <img src="icon/x.svg" alt="ygn"width="30">
+        <p>&copy; 2026 Yourghan. Tous droits réservés.</p>
+        <div class="social-links">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
     </footer>
 </body>
 </html>
-    
